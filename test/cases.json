@@ -1,0 +1,36 @@
+{
+ "tests": [
+  {
+   "in": {
+    "csv": "control,finding,owner,due,status,evidence\nA.5.15,Access review not completed,Ayşe,2026-11-10,open,\nA.8.13,Backup restore test,Mehmet,2026-11-30,in progress,\nA.5.24,Incident response exercise,Ayşe,2026-10-15,closed,\nA.8.8,Patch process document,Ali,2026-12-20,open,\nA.5.9,Asset inventory updated,Ali,2026-09-01,closed,SharePoint/Evidence/A59.xlsx",
+    "ref": "2026-11-22",
+    "soon": 14
+   },
+   "v": {
+    "overdue": 1,
+    "soon": 1,
+    "closed": 2,
+    "open": 3,
+    "noEv": 1
+   }
+  },
+  {
+   "in": {
+    "csv": "control;finding;owner;due;status;evidence\n4.1;Kontext dokumentieren;QM;15.01.2027;offen;",
+    "ref": "2026-11-22",
+    "soon": 30
+   },
+   "v": {
+    "overdue": 0,
+    "open": 1
+   }
+  },
+  {
+   "in": {
+    "csv": "finding,due,status\nX,2026-11-10,maybe",
+    "ref": "2026-11-22"
+   },
+   "err": "csv"
+  }
+ ]
+}

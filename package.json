@@ -1,0 +1,15 @@
+{
+  "name": "audit-evidence-tracker",
+  "version": "1.1.3",
+  "private": true,
+  "description": "From an audit findings and corrective action list, extract overdue items, upcoming deadlines, items closed without evidence and status per owner; download as XLSX.",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://uyum.eretek.com/en/tools/audit-evidence-tracker",
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "test": "node test/run.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
